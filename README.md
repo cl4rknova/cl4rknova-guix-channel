@@ -11,7 +11,7 @@ To use the channel, add it to your configuration in
         (url "https://github.com/cl4rknova/guix-channel.git")
         (introduction
          (make-channel-introduction
-          "42f5a932f69e67180b577d9fab29ea3ca84097e8"
+          "60ead0cb6748a1fc4df605c7b021bf99b1458960"
           (openpgp-fingerprint
            "5B85 0A07 DB01 FD6F D9C4  406E 2B52 F213 425A A0D1"))))
        %default-channels)
