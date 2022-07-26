@@ -36,7 +36,7 @@
   #:use-module (srfi srfi-1)
   #:use-module (srfi srfi-26))
 
-(define emacs-with-native-comp
+(define emacs-with-native-comp2
   (lambda* (emacs gcc #:optional full-aot)
     (let ((libgccjit (libgccjit-for-gcc gcc)))
       (package
