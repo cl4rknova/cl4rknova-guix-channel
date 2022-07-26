@@ -8,7 +8,7 @@ To use the channel, add it to your configuration in
 ``` scheme
 (cons* (channel
         (name 'flat)
-        (url "https://github.com/cl4rknova/guix-channel.git")
+        (url "https://github.com/cl4rknova/cl4rknova-guix-channel.git")
         (introduction
          (make-channel-introduction
           "60ead0cb6748a1fc4df605c7b021bf99b1458960"
