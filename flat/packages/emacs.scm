@@ -36,7 +36,7 @@
   #:use-module (srfi srfi-1)
   #:use-module (srfi srfi-26))
 
-(define emacs-with-native-comp2
+(define emacs-with-native-comp
   (lambda* (emacs gcc #:optional full-aot)
     (let ((libgccjit (libgccjit-for-gcc gcc)))
       (package
@@ -116,7 +116,7 @@
 
 (define-public emacs-native-comp
   (emacs-from-git
-   (emacs-with-native-comp2 emacs-next gcc-11 'full-aot)
+   (emacs-with-native-comp emacs-next gcc-11 'full-aot)
    #:pkg-name "emacs-native-comp"
    #:pkg-version "28.1.90"
    #:pkg-revision "202"
@@ -127,7 +127,7 @@
 
 (define-public emacs-pgtk-native-comp
   (emacs-from-git
-   (emacs-with-native-comp2 emacs-next-pgtk gcc-11 'full-aot)
+   (emacs-with-native-comp emacs-next-pgtk gcc-11 'full-aot)
    #:pkg-name "emacs-pgtk-native-comp"
    #:pkg-version "28.1.90"
    #:pkg-revision "224"
